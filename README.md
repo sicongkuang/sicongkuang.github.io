@@ -17,3 +17,15 @@
    * Crypto tab: choose SSL as "Full", and enable HSTS
    * Page Rules tab: enter url: http://username.com/* , and choose settings as "Always Use HTTPS"
    * now `curl -I username.com` will redirect you to https://username.com
+
+### Do you know why cloudflare.com can access your github page but curl get a 301 redirect?
+
+That's because cloudflare.com preserved your host header when it works as a reverse proxy.
+
+```bash
+curl -H "Host:kuangsicong.com" -I https://sicongkuang.github.io
+```
+This command get 200, but the following command will get 301 response.
+```bash
+curl -I https://sicongkuang.github.io
+```
