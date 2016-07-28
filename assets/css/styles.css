@@ -318,6 +318,14 @@ iframe {
   color: #999;
   font-weight: normal;
 }
+.publications .item .title {
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 8px;
+  line-height: 1.5;
+  color: #434343;
+  font-family: helvetica;
+}
 /* Git section */
 .github-graph {
   margin-bottom: 30px;
