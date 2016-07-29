@@ -318,6 +318,15 @@ iframe {
   color: #999;
   font-weight: normal;
 }
+.teaching .course{
+    width: 150px;
+    float: left;
+    display: block;
+}
+.teaching .year{
+  float: right;
+  margin-right: 4%;
+}
 .publications .item .title {
   font-size: 12px;
   margin-top: 0;
