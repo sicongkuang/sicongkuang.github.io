@@ -70,6 +70,7 @@ CF-RAY: 2cd4a8b275fb070d-SJC
 ```
 
 This curl command will:
+
 1. hit cloudflare https url rewrite rule
 2. hit cloudflare and cloudflare request the content from github
 
@@ -129,6 +130,7 @@ Server: cloudflare-nginx
 CF-RAY: 2cd4cb8ae9b95158-SJC
 ```
 This curl command will:
+
 1. hit cloudflare https url rewrite rule
 2. hit cloudflare and cloudflare forward request to github. github find that's not the right host, so send 301 redirect to https://kuangsicong.com/ . I don't know how github figure out we are using https instead of http. The request http headers only have host info, no protocol info.
 3. hit cloudflare and cloudflare request the content from github
